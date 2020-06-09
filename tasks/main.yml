@@ -1,5 +1,8 @@
 ---
 # tasks file for apigee-opdk-extension-ds
+- name: Cache attributes attributes
+  include_tasks: "cache.yml"
+
 - name: Assert that required attributes are available
   assert:
     that:
